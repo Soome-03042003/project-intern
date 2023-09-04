@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.66.1"
+  },
+  "name": "project-intern",
+  "description": "��#\u0000 \u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000-\u0000i\u0000n\u0000t\u0000e\u0000r\u0000n\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"sass scss-sass:assets/css -w" 
+  },
+  "author": "",
+  "license": "ISC"
+}

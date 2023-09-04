@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 300px;
+  width: 500px;
+  background-color: chocolate;
+}
+
+.list__link {
+  background-color: #0404fc;
+  height: 150px;
+  width: 150px;
+  border-radius: 10%;
+}
+.list__link-child {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-main {
+  background-color: red;
+  border: 0px solid #4b0707;
+  color: #fff;
+  border-radius: 10%;
+}
+
+.btn-container {
+  background-color: blue;
+  border: 0px solid #ccc;
+  color: green;
+  border-radius: 10%;
+}
+
+.btn-container {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

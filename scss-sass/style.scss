@@ -1,0 +1,45 @@
+*, 
+    ::before,
+     ::after{
+    box-sizing:border-box;
+    }
+    $color-blue:#0404fc;
+    $color-white:#fff;
+    .container{
+        height: 300px;
+        width: 500px;
+        background-color: chocolate;   
+    }
+    .list__link{
+        background-color: $color-blue;
+        height: 150px;
+        width: 150px;
+        border-radius: 10%;
+        
+        &-child{
+            color:$color-white;
+            text-decoration: none;
+        }
+     
+        
+    }
+    @mixin button($color,$status, $fun){
+     background-color: $color;
+     border: $status;
+     color: $fun;
+     border-radius: 10%;
+    }
+    
+    .btn-main{
+        @include button(red,0px solid #4b0707,#fff);
+    }
+    .btn-container{
+        @include button(blue, 0px solid #ccc,green)
+    }
+    
+    @function marginCall($a,$b){
+        @return $a*$b;
+    }
+    .btn-container{
+        margin: marginCall(2,5)*1px;
+    }
