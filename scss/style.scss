@@ -1,60 +1,17 @@
-*, 
-    ::before,
-     ::after{
-    box-sizing:border-box;
-    }
-    $color-blue:#0404fc;
-    $color-white:#fff;
-    .container{
-        height: 300px;
-        width: 500px;
-        background-color: chocolate;   
-    }
-    .list__link{
-        background-color: $color-blue;
-        height: 150px;
-        width: 150px;
-        border-radius: 10%;
-        
-        &-child{
-            color:$color-white;
-            text-decoration: none;
-        }
-     
-        
-    }
-    @mixin button($color,$status, $fun){
-     background-color: $color;
-     border: $status;
-     color: $fun;
-     border-radius: 10%;
-    }
-    
-    .btn-main{
-        @include button(red,0px solid #4b0707,#fff);
-    }
-    .btn-container{
-        @include button(blue, 0px solid #ccc,green)
-    }
-    
-    @function marginCall($a,$b){
-        @return $a*$b;
-    }
-    .btn-container{
-        margin: marginCall(2,5)*1px;
-    }
-    @import"./Abstracts/function";
-    @import"./Abstracts/variable";
-    @import"./Abstracts/mixin";
-    @import"./Base/animation";
-    @import"./Base/typography";
-    @import"./Base/utilities";
-    @import"./Base/base";
-    @import"./Component/button";
-    @import"./Component/composion";
-    @import"./Component/button";
-    @import"./Component/button";
-    @import"./Pages";
-
-
-    
+@import './animation.scss';
+@import  './base.scss';
+@import './button.scss';
+@import './composion.scss';
+@import './extend.scss';
+@import './function.scss';
+@import './grid.scss';
+@import './header.scss';
+@import './home.scss';
+@import './mixin.scss';
+@import './typography.scss';
+@import './utilities.scss';
+@import './variable.scss';
+@import './article.scss';
+@import './footer.scss';
+@import './navigation.scss';
+@import './section.scss';
