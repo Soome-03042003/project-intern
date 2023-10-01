@@ -15,6 +15,8 @@
 @import url("/scss/style.scss");
 @import url("/scss/style.scss");
 @import url("/scss/style.scss");
+@import url("/scss/style.scss");
+@import url("/scss/style.scss");
 @import url("./variable.scss");
 @import url("/scss/style.scss");
 *,
@@ -36,6 +38,160 @@ p {
 
 .d-flex {
   display: flex;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.l-t-n {
+  list-style: none;
+}
+
+.navBar__header {
+  background-color: #b27338;
+  height: 100px;
+  width: 1365px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.navBar__header--container {
+  margin: 5px 5px 0px 5px;
+  justify-content: space-between;
+}
+.navBar__header--list {
+  list-style: none;
+}
+.navBar__header--item {
+  font-size: 1.2rem;
+  padding: 7px 15px;
+  color: #fdfaf7;
+}
+.navBar__header--logo {
+  width: 150px;
+  height: 60px;
+}
+.navBar__header--bottom-header {
+  align-items: center;
+}
+.navBar__header--logo img {
+  width: 100%;
+  height: 100%;
+}
+.navBar__header--icon-list {
+  font-size: 2rem;
+  margin: 0px 25px;
+}
+.navBar__header-l-t {
+  display: none;
+  background-color: #fbfaf8;
+  height: 450px;
+  width: 210px;
+}
+.navBar__header-l-t a {
+  text-decoration: none;
+}
+.navBar__header-l-l {
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+}
+.navBar__header-l-l p {
+  color: black;
+}
+.navBar__header-l-l svg {
+  float: left;
+  padding-right: 5px;
+}
+.navBar__header-l-l:hover .navBar__header-l-u-c {
+  display: inline-block;
+}
+.navBar__header-l-u-c {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 210px;
+  height: auto;
+  width: 210px;
+  display: none;
+}
+.navBar__header-l-l-c {
+  padding: 15px;
+  font-size: 16px;
+  color: #000;
+  list-style: none;
+}
+
+.navBar__icon--c-i {
+  margin-left: 25px;
+}
+.navBar__icon--item {
+  list-style: none;
+  padding: 15px;
+}
+.navBar__icon--post {
+  list-style: none;
+  background: #f59851;
+  height: 35px;
+  width: 115px;
+  border-radius: 5px;
+  color: #fff;
+}
+.navBar__icon--post p {
+  height: 35px;
+}
+
+.navBar__header--search {
+  height: 35px;
+  width: 656px;
+  position: relative !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.navBar__header--btn-search {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  width: 60px;
+  height: 31px;
+  border-radius: 5px;
+  background-color: #f59851;
+}
+.navBar__header--btn-search i {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 0px solid #fff;
+}
+
+.navBar__icon--post {
+  list-style: none;
+  background: #f59851;
+  height: 35px;
+  width: 115px;
+  border-radius: 5px;
+  color: #fff;
+}
+.navBar__icon--post p {
+  height: 35px;
 }
 
 .grid {
@@ -533,30 +689,64 @@ p {
   font-size: 2rem;
   margin: 0px 25px;
 }
-.navBar__header--search {
-  height: 35px;
-  width: 656px;
-  position: relative !important;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.navBar__header-l-t {
+  display: none;
+  background-color: #fbfaf8;
+  height: 450px;
+  width: 210px;
 }
-.navBar__header--btn-search {
+.navBar__header-l-t a {
+  text-decoration: none;
+}
+.navBar__header-l-l {
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+}
+.navBar__header-l-l p {
+  color: black;
+}
+.navBar__header-l-l svg {
+  float: left;
+  padding-right: 5px;
+}
+.navBar__header-l-l:hover .navBar__header-l-u-c {
+  display: inline-block;
+}
+.navBar__header-l-u-c {
   position: absolute;
-  right: 0;
+  background-color: #fff;
   top: 0;
-  width: 60px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #f59851;
+  left: 210px;
+  height: auto;
+  width: 210px;
+  display: none;
+}
+.navBar__header-l-l-c {
+  padding: 15px;
+  font-size: 16px;
+  color: #000;
+  list-style: none;
 }
 
-#search {
-  width: 100%;
-  height: 100%;
+.navBar__icon--c-i {
+  margin-left: 25px;
+}
+.navBar__icon--item {
+  list-style: none;
+  padding: 15px;
+}
+.navBar__icon--post {
+  list-style: none;
+  background: #f59851;
+  height: 35px;
+  width: 115px;
   border-radius: 5px;
-  border: 0px solid #fff;
+  color: #fff;
+}
+.navBar__icon--post p {
+  height: 35px;
 }
 
 .navBar {

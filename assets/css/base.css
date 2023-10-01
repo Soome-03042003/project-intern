@@ -20,4 +20,16 @@ p {
   display: flex;
 }
 
+.a-i-c {
+  align-items: center;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.l-t-n {
+  list-style: none;
+}
+
 /*# sourceMappingURL=base.css.map */
