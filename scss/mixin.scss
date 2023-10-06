@@ -15,4 +15,20 @@
 //   .success {
 //     @include theme($theme: DarkGreen);
 //   }
-@import url("/scss/style.scss");
+@mixin grid($NumberItems,$pixel,$gap){
+    display:grid;
+    grid-template-columns: repeat($NumberItems,$pixel);
+    grid-column-gap: $gap;
+}
+@mixin border-radius($precent){
+    border-radius: $precent;
+}
+@mixin d-flex($j-content,$a-item){
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-item;
+}
+@mixin images($height,$width){
+    height: $height;
+    width: $width;
+}

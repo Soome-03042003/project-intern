@@ -1,7 +1,146 @@
-@import url("/scss/style.scss");
-@import url('./variable.scss');
-.navBar{
-    background-color: $secondary-quincy-100;
-    height: 450px;
+@import "./animation.scss";
+@import "./base.scss";
+@import "./button.scss";
+@import "./composion.scss";
+@import "./extend.scss";
+@import "./function.scss";
+@import "./grid.scss";
+@import "./home.scss";
+@import "./mixin.scss";
+@import "./typography.scss";
+@import "./utilities.scss";
+@import "./variable.scss";
+@import "./article.scss";
+@import "./footer.scss";
+@import "./section.scss";
+.navBar__Nav {
+  background-color: $secondary-quincy-50;
+  height: 500px;
+  width: 950px;
+  padding-top: 12rem;
+  margin: auto;
+
+  &--slider {
+    @extend %border-radius-5;
+    // margin-top: 25%;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100vw;
+    height: 250px;
+    margin: auto;
+    position: relative;
+  }
+  &--list {
+    position: absolute;
+    left: 5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+  }
+  &--list img {
+    width: 900px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  // --title---
+  &--titles {
+    height: 84px;
     width: 950px;
+    @include d-flex($j-content: space-evenly, $a-item: none);
+  }
+
+  &--list-title {
+    padding: 20px 20px;
+  }
+  &--items-title {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+  }
+
+  &--title-images img {
+    @extend %img-100precent;
+    @include border-radius($precent: 50%);
+  }
+  &--text-title {
+    text-align: center;
+    font-weight: 400;
+  }
+}
+// ------------------navigation discovery--------
+.navBar {
+ position: relative;
+  &__descovery {
+    height: 300px;
+    width: 950px;
+    background-color: $secondary-quincy-50;
+    margin: auto;
+    margin-top: 50px; 
+   
+  
+  }
+  &__title {
+    height: 50px;
+    font-weight: bold;
+    padding: 20px 25px;
+  }
+  &__items {
+    padding: 0 25px;
+    &--list {
+      height: 100px;
+      width: 100px;
+    }
+    &--item {
+      list-style: none;
+    }
+    &--images {
+      height: 90px;
+      width: 90px;
+    }
+    &--images img {
+      @extend %img-100precent;
+      @include border-radius($precent: 15%);
+    }
+  }
+  &__ItemDescovery {
+    padding: 0 25px;
+    transition: 1s;
+  }
+  &__category {
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  &__card {
+    @include grid($NumberItems: 8, $gap: 3.3rem, $pixel: 100px);
+
+    &--item {
+      list-style: none;
+      text-align: center;
+      &-container {
+        @include d-flex($j-content: center, $a-item: center);
+        flex-direction: column;
+      }
+      &-images {
+       
+        & img {
+          @include border-radius($precent:10px);
+          @include images($height: 9rem, $width: 9rem);
+        }
+      }
+      &-description{
+        padding-top: 10px;
+        
+        h3{
+          font-weight:normal;
+        }
+      }
+    }
+  }
 }

@@ -1,1 +1,46 @@
-@import url("/scss/style.scss");
+@import "./variable.scss";
+@import "./button.scss";
+@import "./extend.scss";
+@import "./mixin.scss";
+
+.article {
+  width: 95rem;
+  &__container {
+    margin-top: 2rem;
+    height: 50rem;
+    background-color: $secondary-quincy-50;
+  }
+  &__title {
+    position: relative;
+    padding: 20px 25px;
+    font-size: 1.6rem;
+    background-image: linear-gradient(
+      0deg,
+      $tertiary-tango-400,
+      $secondary-quincy-500
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      height: 1px;
+      width: 94%;
+      background-color: $primary-dark;
+    }
+  }
+  &__list {
+    &-item {
+      height: 300px;
+      width: 450px;
+      background-color: $secondary-quincy-200;
+      &-images {
+        @include images($height: 10rem, $width: 10rem);
+        img {
+          @extend %img-100precent;
+        }
+      }
+    }
+  }
+}

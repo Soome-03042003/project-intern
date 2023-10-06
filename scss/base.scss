@@ -16,6 +16,7 @@
 // }
 // @import url("/scss/style.scss");
   @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oxygen&display=swap');
+  @import './variable.scss';
 *,
     ::before,
      ::after{
@@ -26,6 +27,7 @@
     html{
         font-size:62.5%;
         line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     p{
@@ -34,3 +36,32 @@
     .d-flex{
         display: flex;
     }
+    .a-i-c{
+        align-items: center;
+    }
+    .j-c-c{
+        justify-content: center;
+    }
+    .l-t-n{
+   list-style: none;
+    }
+    swiper-container {
+        width: 100%;
+      }
+      a{
+        text-decoration: none;
+        color: $primary-black;
+      }
+  
+     .m-t-12r{
+      margin-top: 12rem;
+     }
+     .h-25r{
+      height: 25rem;
+     }
+     .p-1r{
+      padding: 1rem;
+     }
+     .b-r-5p{
+      border-radius: 5px;
+     }
