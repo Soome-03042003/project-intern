@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //SCSS CÚ PHÁP
 // _base.scss
 // $font-stack: Helvetica, sans-serif;
@@ -66,50 +66,3 @@
      .b-r-5p{
       border-radius: 5px;
      }
-=======
-//SCSS CÚ PHÁP
-// _base.scss
-// $font-stack: Helvetica, sans-serif;
-// $primary-color: #333;
-
-// body {
-//   font: 100% $font-stack;
-//   color: $primary-color;
-// }
-// // styles.scss
-// @use 'base';
-
-// .inverse {
-//   background-color: base.$primary-color;
-//   color: white;
-// }
-// @import url("/scss/style.scss");
-  @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oxygen&display=swap');
-*,
-    ::before,
-     ::after{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-    }
-    html{
-        font-size:62.5%;
-        line-height: 1.6rem;
-    }
-    
-    p{
-        font-size: 1.6rem;
-    }
-    .d-flex{
-        display: flex;
-    }
-    .a-i-c{
-        align-items: center;
-    }
-    .j-c-c{
-        justify-content: center;
-    }
-    .l-t-n{
-   list-style: none;
-    }
->>>>>>> c870b3d73007ebf439c26a0f478590be69a54145

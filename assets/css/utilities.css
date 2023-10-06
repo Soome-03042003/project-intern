@@ -1,9 +1,9 @@
 /* Error: expected "{".
  *    ,
- * 21 | @import url("/scss/style.scss");
- *    |                                ^
+ * 12 | >>>>>>> c870b3d73007ebf439c26a0f478590be69a54145
+ *    |                                                 ^
  *    '
- *   scss\utilities.scss 21:32  root stylesheet */
+ *   scss\utilities.scss 12:49  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 21 \2502  @import url("/scss/style.scss");\a    \2502                                 ^\a    \2575 \a   scss\\utilities.scss 21:32  root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 12 \2502  >>>>>>> c870b3d73007ebf439c26a0f478590be69a54145\a    \2502                                                  ^\a    \2575 \a   scss\\utilities.scss 12:49  root stylesheet';
 }
