@@ -1,61 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oxygen&display=swap");
-*,
-::before,
-::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *    ,
+ * 19 |   @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oxygen&display=swap');
+ *    |                                                                                                            ^
+ *    '
+ *   scss\base.scss 19:108  root stylesheet */
 
-html {
-  font-size: 62.5%;
-  line-height: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a    \2577 \a 19 \2502    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Oxygen&display=swap');\a    \2502                                                                                                             ^\a    \2575 \a   scss\\base.scss 19:108  root stylesheet";
 }
-
-p {
-  font-size: 1.6rem;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.a-i-c {
-  align-items: center;
-}
-
-.j-c-c {
-  justify-content: center;
-}
-
-.l-t-n {
-  list-style: none;
-}
-
-swiper-container {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.m-t-12r {
-  margin-top: 12rem;
-}
-
-.h-25r {
-  height: 25rem;
-}
-
-.p-1r {
-  padding: 1rem;
-}
-
-.b-r-5p {
-  border-radius: 5px;
-}
-
-/*# sourceMappingURL=base.css.map */

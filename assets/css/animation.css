@@ -1,10 +1,17 @@
-@keyframes openList {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/* Error: expected "{".
+ *    ,
+ * 15 | @import url("/scss/style.scss");
+ *    |                                ^
+ *    '
+ *   scss\animation.scss 15:32  root stylesheet */
 
-/*# sourceMappingURL=animation.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 15 \2502  @import url("/scss/style.scss");\a    \2502                                 ^\a    \2575 \a   scss\\animation.scss 15:32  root stylesheet';
+}

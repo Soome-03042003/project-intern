@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import './animation.scss';
 @import  './base.scss';
@@ -176,3 +177,103 @@
 }
 
 
+=======
+@import url("/scss/style.scss");
+@import './variable.scss';
+//---------------- HEADER-------------------
+.navBar__header{
+    background-color: $primary-almond-500;
+    height: 100px;
+    width: 1365px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    &--container{
+
+        margin: 5px 5px 0px 5px;
+     justify-content: space-between;
+    }
+    &--list{
+     list-style: none;
+    }
+    &--item{
+        font-size: 1.2rem;
+        padding: 7px 15px;
+        color:$primary-almond-50;
+    }
+    &--logo{
+        width: 150px;
+        height: 60px;
+    }
+    &--bottom-header{
+    align-items: center;
+    }
+    &--logo img{
+        width: 100%;
+        height: 100%;
+    }
+    &--icon-list{
+        font-size: $size-icon;
+        margin: 0px 25px;
+    }
+    &-l-t{
+        display: none;
+        background-color:$secondary-quincy-50;
+        height: 450px;
+       width: 210px;
+    }
+    &-l-t a{
+        text-decoration: none;
+    }
+    &-l-l{
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+        position:relative;
+    }
+    &-l-l p{
+        color:black;
+    }
+    &-l-l svg{
+        float: left;
+        padding-right: 5px;
+    }
+    &-l-l:hover  &-l-u-c{
+        display: inline-block;
+    }
+    &-l-u-c {
+        position:absolute;
+        background-color: #fff;
+        top: 0;
+        left: 210px;
+        height: auto;
+        width: 210px;  
+         display:none;
+    }
+    &-l-l-c{
+  
+     padding:15px;
+     font-size: 16px;
+     color:#000;
+     list-style: none;
+    }
+   
+}
+.navBar__icon{
+    &--c-i{
+     margin-left: 25px;
+    }
+    &--item{
+        list-style: none;
+        padding:15px;
+    }
+    &--bag{
+        // display:none;
+        
+    }
+}
+
+
+>>>>>>> c870b3d73007ebf439c26a0f478590be69a54145

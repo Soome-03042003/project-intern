@@ -1,3 +1,17 @@
+/* Error: expected "{".
+ *    ,
+ * 31 | @import './variable.scss';
+ *    |                          ^
+ *    '
+ *   scss\extend.scss 31:26  root stylesheet */
 
-
-/*# sourceMappingURL=extend.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a    \2577 \a 31 \2502  @import './variable.scss';\a    \2502                           ^\a    \2575 \a   scss\\extend.scss 31:26  root stylesheet";
+}
